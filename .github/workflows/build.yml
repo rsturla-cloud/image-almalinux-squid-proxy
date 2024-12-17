@@ -1,0 +1,23 @@
+name: Build
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  schedule:
+    # Weekly on Wednesday at 12:00 PM
+    - cron: "0 12 * * 3"
+
+permissions:
+  contents: read
+  packages: write
+  id-token: write
+
+jobs:
+  build-image:
+    uses: rsturla-cloud/actions/.github/workflows/build-image.yml@main
+    with:
+      spec_file_path: ./image.yml

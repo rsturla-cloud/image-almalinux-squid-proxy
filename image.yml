@@ -1,0 +1,10 @@
+name: almalinux-squid-proxy
+platforms:
+  - amd64
+source_tags:
+  - 9
+tags:
+  - ${SOURCE_TAG}
+  - ${SOURCE_TAG}-${COMMIT_SHA_SHORT}
+  - ${SOURCE_TAG}-${BUILD_TIMESTAMP_SHORT}
+  - ${SOURCE_TAG}-${BUILD_TIMESTAMP_SHORT}-${COMMIT_SHA_SHORT}

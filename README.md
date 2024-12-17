@@ -1,0 +1,1 @@
+# image-almalinux-squid-proxy

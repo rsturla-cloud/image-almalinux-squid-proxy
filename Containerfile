@@ -1,5 +1,5 @@
 ARG OS_VERSION=9
-FROM quay.io/rsturla-cloud/base/almalinux:${OS_VERSION}
+FROM ghcr.io/rsturla-cloud/base/almalinux:${OS_VERSION}
 ARG OS_VERSION
 
 COPY files/ /
